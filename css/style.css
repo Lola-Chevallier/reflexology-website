@@ -220,7 +220,7 @@
 
 
 .bg-breadcrumb {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/appointment-background.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/energetique-chinoise1.webp);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -377,10 +377,11 @@
 
 /*** Appointment  Start ***/
 .appointment {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/appointment-background.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/energetique-chinoise1.webp);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-bottom: 120px;
 }
 
 .appointment .appointment-form {
@@ -436,6 +437,7 @@
 
 
 /*** Events Start ***/
+
 .gallery .tab-class .nav-item {
     padding: 0 0 20px 0;
 }
@@ -596,7 +598,7 @@
 
 /*** testimonial Start ***/
 .testimonial {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/testimonial-bg.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/appointment.webp);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
