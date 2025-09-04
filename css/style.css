@@ -77,7 +77,7 @@ body{
 
 .btn-light-outline-0 {
     border: 0;
-    color: var(--bs-primary) !important;
+    color: #7f0f09 !important;
 }
 
 .btn-primary-outline-0:hover {
@@ -98,6 +98,13 @@ body{
 
 .fa-facebook-f{
     color: white;
+}
+
+.btn-square:hover{
+    background-color: #7f0f09;
+}
+a:active{
+    background-color: #7f0f09;
 }
 
 /*** Topbar Start ***/
@@ -305,6 +312,19 @@ body{
     color: white;
 }
 
+.text-end{
+    text-align: left !important;
+}
+
+.img-services {
+
+    object-fit: contain;
+    border-radius: 10px;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+}
+
 /*** Services End ***/
 
 
@@ -429,7 +449,7 @@ body{
 /*** Appointment  Start ***/
 .appointment {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/energetique-chinoise1.webp);
-    background-position: center center;
+    background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 120px;
@@ -446,6 +466,22 @@ body{
     object-fit: cover;
     border-radius: 10px;
 }
+
+/***** Modifs *****/
+
+.places-hours{
+    width: 100%;
+}
+
+.display-5 {
+    color: white !important;
+    text-align: center;
+}
+
+.justify-content-between {
+    justify-content: flex-start !important;
+}
+
 /*** Appointment End ***/
 
 /*** Counter Start ***/
@@ -504,6 +540,15 @@ body{
     position: relative;
     overflow: hidden;
     border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.img-fluid{
+  width: 100%;
+  aspect-ratio: 1/1;   /* carré parfait */
+  object-fit: cover;
 }
 
 .gallery .gallery-img img {
@@ -552,7 +597,7 @@ body{
 
 /*** Pricing Start ***/
 .pricing {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/appointment-background.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/price-img.webp);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -661,6 +706,16 @@ body{
 }
 /*** Team End ***/
 
+/***** Gallery *****/
+
+.gallery{
+    color: black !important;
+}
+
+.img-title{
+    color: black !important;
+}
+
 /*** testimonial Start ***/
 .testimonial {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/appointment.webp);
@@ -728,6 +783,11 @@ body{
 /*** footer start ***/
 .footer {
     background: #dca588;
+}
+
+.justify-content-center{
+    justify-content: space-around !important;
+    gap: 50px;
 }
 
 .footer .footer-item a,
