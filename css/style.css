@@ -147,7 +147,7 @@ a:active{
     margin-left: 8px;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
     .navbar .nav-item .dropdown-menu {
         display: block;
         visibility: hidden;
@@ -330,7 +330,7 @@ a:active{
 
 
 /*** About Start ***/
-/*** Youtube Video start ***/
+/*** Youtube Video start
 .video {
     position: relative;
     padding-right: 70px; 
@@ -434,7 +434,7 @@ a:active{
     background: #000000;
     opacity: 1;
 }
-/*** Youtube Video End ***/
+ ***/
 
 /*** Rajout about ***/
 
@@ -779,6 +779,30 @@ a:active{
     background: rgba(255, 255, 255, 0.6);
 }
 /*** Contact End ***/
+
+/***** infos-map *****/
+
+.info-window-map {
+  max-width: 200px;
+}
+
+.info-window-map h6 {
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #333;
+}
+
+.info-window-map p {
+  font-size: 14px;
+  color: #555;
+  margin: 0;
+}
+
+.info-img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 5px;
+}
 
 /*** footer start ***/
 .footer {
