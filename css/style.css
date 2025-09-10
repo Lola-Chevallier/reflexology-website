@@ -2,6 +2,7 @@
 
 body{
     background-color: #fbece4;
+    caret-color: transparent; /* supprime le curseur de saisie */
 }
 
 /*** Spinner Start ***/
@@ -135,6 +136,71 @@ a:active{
 a:focus{
     background-color: #7f0f09 !important;
     border-color: #7f0f09 !important;
+}
+
+/* couleurs (modifie selon ta charte) */
+:root{
+  --btn-bg: #e05b54 ;   /* couleur normale (beige) */
+  --btn-bg-hover: #7f0f09;/* couleur au hover (marron foncé) */
+  --btn-border: #dca588;  /* bordure = beige */
+}
+
+/* état normal */
+.btn-primary {
+  background-color: var(--btn-bg) !important;
+  border-color: var(--btn-border) !important;
+  color: #fff !important;
+  box-shadow: none !important;
+}
+
+/* hover (sombre quand on survole) */
+.btn-primary:hover {
+  background-color: var(--btn-bg-hover) !important;
+  border-color: var(--btn-bg-hover) !important;
+}
+
+/* active (pendant l'appui) : on peut garder le même que hover */
+.btn-primary:active {
+  background-color: var(--btn-bg-hover) !important;
+  border-color: var(--btn-bg-hover) !important;
+}
+
+/* focus (après le clic ou navigation clavier) : revenir au style normal
+   et supprimer le ring/ombre Bootstrap qui donne l'effet 'rose' */
+.btn-primary:focus,
+.btn-primary.active,
+.show > .btn-primary.dropdown-toggle {
+  background-color: var(--btn-bg) !important;
+  border-color: var(--btn-border) !important;
+  box-shadow: none !important;   /* supprime l'ombre colorée */
+  outline: none !important;
+}
+
+/* garder une indication pour les utilisateurs clavier (accessibilité) */
+.btn-primary:focus-visible {
+  box-shadow: 0 0 0 .25rem rgba(220,165,136,0.25) !important; /* anneau discret */
+}
+
+/* Supprimer le fond au clic sur les liens de la navbar */
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-link:active {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+/* Supprimer aussi sur les liens de la topbar */
+.topbar a:focus,
+.topbar a:active {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+/* Désactiver la main (curseur normal) sur certains liens */
+.no-cursor {
+  cursor: default !important;
+  pointer-events: none; /*empêche le clic */
 }
 
 /*** Topbar End ***/
