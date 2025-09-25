@@ -788,6 +788,43 @@ a{
 }
 /*** copyright end ***/
 
+/****** Cookies *****/
+
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #f8f9fa;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
+  font-size: 14px;
+  z-index: 9999; /* important pour que ça passe au-dessus du contenu */
+}
+
+.cookie-banner button {
+  background: #e05b54;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  margin-left: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cookie-banner #reject-cookies {
+  background: #aaa;
+}
+
+.cookie-banner button:hover {
+ background: #7f0f09;
+}
+
+.cookie-banner #reject-cookies:hover{
+background: #555;
+}
+
 /***** Modal RDV *****/
 
 .contact-infos {
@@ -797,4 +834,27 @@ a{
   gap: 10px;
   padding-bottom: 15px; 
 
+}
+
+/* Écrans petits (mobiles ≤ 480px) */
+@media (max-width: 480px) {
+  .navbar-brand h1 {
+    font-size: 16px; /* plus petit que sur 768px */
+  }
+
+  .horaires {
+    font-size: 20px; /* au lieu de 26px */
+  }
+
+  .places-hours h4 {
+    font-size: 18px;
+  }
+
+  .places-hours p {
+    font-size: 16px;
+  }
+
+  .img-services {
+    height: 120px; /* réduire encore */
+  }
 }
