@@ -758,8 +758,8 @@ a:focus{
 }
 
 .justify-content-center{
-    justify-content: space-around !important;
-    gap: 50px;
+    text-align: center !important;
+    font-size: 26px !important;
 }
 
 .footer .footer-item a,
