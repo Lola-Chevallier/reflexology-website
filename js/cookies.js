@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const rejectBtn = document.getElementById("reject-cookies");
 
     // Vérifie si l’utilisateur a déjà fait un choix
-    ''''if (localStorage.getItem("cookiesChoice")) {
+    if (localStorage.getItem("cookiesChoice")) {
        banner.style.display = "none";
     }
 

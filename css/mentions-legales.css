@@ -1,24 +1,193 @@
-/*** footer start ***/
+/* --- Style général --- */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fce8dd; /* Beige rosé du site */
+  color: #4a2c2a;
+  margin: 0;
+  padding: 0;
+}
+
+/* --- Contenu principal --- */
+.container {
+  background-color:#dca588;;
+  margin: 80px auto 40px;
+  padding: 40px 50px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(127, 15, 9, 0.15);
+}
+
+/* --- Titres --- */
+h1, h2 {
+  color: #7f0f09;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 1.4rem;
+  margin-top: 40px;
+  border-bottom: 2px solid #efcbb8;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* --- Paragraphes et liens --- */
+p {
+  margin-bottom: 20px;
+  text-align: justify;
+  line-height: 1.7;
+}
+
+a {
+  color: #7f0f09;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #e2685d;
+}
+
+/* --- Bouton retour au site --- */
+.retour-container {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.btn-retour {
+  display: inline-block;
+  margin-bottom: 40px;
+  padding: 12px 30px;
+  background-color: #e2685d; /* même teinte que “Réserver ma séance” */
+  color: #fff;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-retour:hover {
+  background-color: #7f0f09;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* --- Footer cohérent avec le site --- */
 .footer {
-    background: #dca588;
+  background-color: #dca588;
+  color: #fff;
 }
 
-.justify-content-center{
-    justify-content: space-around !important;
-    gap: 50px;
+.footer a {
+  color: #fff !important;
+  text-decoration: none;
 }
 
-.footer .footer-item a,
-.footer .footer-item p {
-    color: var(--bs-white);
-    line-height: 40px;
-    font-size: 17px;
-    transition: 0.5s;
+.footer a:hover {
+  color: #7f0f09 !important;
 }
 
-.footer .footer-item a:hover {
-    letter-spacing: 2px;
-    color: #7f0f09 !important;
+.footer h4 {
+  color: #fff;
 }
 
-/*** Footer End ***/
+p.text-muted.mb-0 {
+    text-align: center;
+}
+
+p.mb-0 {
+    text-align: center;
+}
+
+/* --- Responsive design --- */
+@media (min-width: 365px) and (max-width: 765px) {
+  .container {
+    margin: 20px auto;
+    padding: 25px;
+    max-width: 700px;
+    box-sizing: border-box;
+    border-radius: 0px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .btn-retour {
+    text-align: center;
+  }
+
+  .footer {
+    text-align: center;
+  }
+
+  .footer .colonne-footer {
+    margin-bottom: 30px;
+  }
+
+  .footer {
+    text-align: center;
+  }
+
+  .colonne-footer {
+    margin-bottom: 30px;
+  }
+
+}
+
+/* Harmonisation du footer avec celui du site principal */
+.container-fluid.footer {
+  background-color: #dca588;
+  color: #fff;
+  width: 100%;
+  padding: 60px 0; /* mêmes espacements verticaux que sur la page d'accueil */
+  margin: 0 !important;
+  overflow-x: hidden;
+}
+
+/* Contenu interne du footer */
+.container.footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Titres du footer */
+.footer h4 {
+  color: #fff;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+/* Liens du footer */
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #7f0f09;
+}
+
+/* Texte du footer */
+.footer p {
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+/* Colonnes du footer */
+.colonne-footer {
+  min-width: 250px;
+}
+
